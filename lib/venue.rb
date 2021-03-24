@@ -17,4 +17,12 @@ class Venue
     end
     return uppercased_patrons
   end
+
+  def over_capacity?
+    if @patrons.length > @capacity
+      return true
+    else
+      return false
+    end
+  end
 end
